@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #5ac9c9;
+    font-family: 'Comic Sans MS';
+}
+
+.center{
+    text-align: center;
+}
+
+#menu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.884);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#game-container{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: transparent;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#flappy-brazzer{
+    position: absolute;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+    background-image: url('Player.png');
+    background-size: cover;
+    transition: top 0.2s ease;
+}
+
+.pillar{
+    position: absolute;
+    width: 50px;
+    background-color: #33ff4e;
+    border-radius: 4px;
+    z-index: 0;
+}
+
+#pillar-top{
+    height: 100px;
+    top: 0;
+}
+
+#pillar-bottom{
+    height: 100px;
+    bottom: 0;
+}
+
+#score{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #000000;
+}
+
+#game-over{
+    display: none;
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    width: 200px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.397);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#play-again{
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #c670e7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Comic Sans MS';
+}
+#play-again:hover{
+    background-color: #b339be;
+}
+
+#start-button{
+    padding: 10px 20px;
+    background-color: #c670e7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Comic Sans MS';
+}
+#start-button:hover{
+    background-color: #b339be;
+}
